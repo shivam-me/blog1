@@ -44,7 +44,7 @@ const App = () => (
       <React.Fragment>
         <Header />
         <Switch>
-          <Route path="/blogs/:blogId/posts/:postId/edit" component={PostEditScreen_Container} />
+          <Route path="/blogs/:blogId/posts/:postId/editpostman" component={PostEditScreen_Container} />
           <Route path="/blogs/:blogId/posts/:postId" component={PostViewScreen_Container} />
           <Route path="/blogs/:blogId" component={BlogScreen_Container} />
           <Route path="/register" component={RegisterScreenWithContext} />

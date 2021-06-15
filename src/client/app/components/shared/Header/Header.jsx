@@ -27,12 +27,16 @@ const Header = ({ history }) => (
             history.push('/');
           }, window.alert);
       };
-
       return (
         <header className={styles.page}>
           <div className={styles.inner}>
             <div className={styles['link-set']}>
-              <Link className={styles.logo} to="/" />
+              {/* <Link className={styles.logo} to="/" /> */}
+              <a href ="/" >
+                <img src="https://i.ibb.co/zX9YCNL/Pro-Grasp-Trading-Logo.png" width="50" height="50"  />
+
+              </a>
+              &nbsp; ProGrasp Trading
             </div>
             <div className={styles.actions}>
               {

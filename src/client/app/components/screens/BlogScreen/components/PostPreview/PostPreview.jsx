@@ -10,18 +10,18 @@ const PostPreview = ({ post, author }) => (
       <div className={styles['overlay-border']} />
       <picture>
         <source
-          srcSet={`https://cdn-images-1.medium.com/max/400/${post.imgDescriptor} 1x, https://cdn-images-1.medium.com/max/800/${post.imgDescriptor} 2x`}
+          srcSet={`${post.imgDescriptor} 1x, ${post.imgDescriptor} 2x`}
           media="(max-width: 400px)"
         />
         <source
-          srcSet={`https://cdn-images-1.medium.com/max/600/${post.imgDescriptor} 1x, https://cdn-images-1.medium.com/max/1200/${post.imgDescriptor} 2x`}
+          srcSet={`${post.imgDescriptor} 1x, ${post.imgDescriptor} 2x`}
           media="(min-width: 401px) and (max-width: 600px)"
         />
         <source
-          srcSet={`https://cdn-images-1.medium.com/max/800/${post.imgDescriptor} 1x, https://cdn-images-1.medium.com/max/1600/${post.imgDescriptor} 2x`}
+          srcSet={`${post.imgDescriptor} 1x, ${post.imgDescriptor} 2x`}
           media="(min-width: 601px)"
         />
-        <img src={`https://cdn-images-1.medium.com/max/800/${post.imgDescriptor}`} />
+        <img src={`${post.imgDescriptor}`} />
       </picture>
     </Link>
     <div className={styles.text}>
