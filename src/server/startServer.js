@@ -56,7 +56,7 @@ async function startServer(port) {
 async function createServer(app, port, mode) {
   return new Promise(resolve => {
     const server = app.listen(port, () => {
-      console.log(`Medium-clone server is running on port ${port} (mode: ${mode})`);
+      console.log(`Prograsp Trading server is running on port ${port} (mode: ${mode})`);
       resolve(server);
     });
   });

@@ -5,9 +5,9 @@ import styles from '../Header.module.scss';
 
 const UserLinks = ({ user, onLogout }) => (
   <div className={styles.user}>
-    <a className={styles['sign-out']} href="#" onClick={onLogout}>Sign out</a>
+    {/* <a className={styles['sign-out']} href="#" onClick={onLogout}>Sign out</a> */}
     <div className="avatar avatar--small">
-      <img src={user.avatarUrl} title={`Signed in as ${user.username}`} />
+      {/* <img src={user.avatarUrl} title={`Signed in as ${user.username}`} /> */}
     </div>
   </div>
 );

@@ -30,11 +30,11 @@ const PostPreview = ({ post, author }) => (
         <p>{post.subTitle}</p>
       </Link>
       <div className={styles.meta}>
-        <a className="avatar avatar--small avatar--circled" href="https://blog.kentcdodds.com/@kentcdodds" target="_blank" rel="noopener noreferrer">
+        <a className="avatar avatar--small avatar--circled"  target="_blank" rel="noopener noreferrer">
           <img src={author.avatarUrl} />
         </a>
         <div className={styles['sub-meta']}>
-          <a className={styles.author} href="https://blog.kentcdodds.com/@kentcdodds" target="_blank" rel="noopener noreferrer">
+          <a className={styles.author}  target="_blank" rel="noopener noreferrer">
             {author.username}
           </a>
           <span className={styles.date}>{post.date}</span>

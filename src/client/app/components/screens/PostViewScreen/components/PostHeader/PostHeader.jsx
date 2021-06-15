@@ -5,15 +5,15 @@ import styles from './PostHeader.module.scss';
 
 const PostHeader = ({ post, author }) => (
   <header className={styles['post-header']}>
-    <a className="avatar avatar--big avatar--circled" href="https://blog.kentcdodds.com/@kentcdodds" target="_blank" rel="noopener noreferrer">
+    <a className="avatar avatar--big avatar--circled"  target="_blank" rel="noopener noreferrer">
       <img src={author.avatarUrl} />
     </a>
     <div className={styles.text}>
       <div className={styles.title}>
-        <a href="https://blog.kentcdodds.com/@kentcdodds" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://blog.kentcdodds.com/@kentcdodds" target="_blank" rel="noopener noreferrer"> */}
           {author.username}
-        </a>
-        <button className={`btn btn--smallest ${styles.follow}`}>Follow</button>
+        {/* </a> */}
+        {/* <button className={`btn btn--smallest ${styles.follow}`}>Follow</button> */}
       </div>
       <div className={styles.descr}>{author.bio}</div>
       <div className={styles.meta}>
